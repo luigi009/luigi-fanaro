@@ -38,7 +38,7 @@ button {
 }
 
 button:hover{
-    background: blue;
+    background: rgb(192, 192, 192);
 }
 
 .btn-yellow{
@@ -55,9 +55,9 @@ button:hover{
 }
 
 .btn-equal{
-    background: green;
+    background: rgb(245,146,62);
 }
 
 .btn-clear{
-    background: red;
+    background: rgb(224,224,244);
 }
