@@ -1,0 +1,58 @@
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    opacity: 1.6;
+
+    -webkit-animation: moving-img 2.5s forwards;
+}
+
+@-webkit-keyframes moving-img {
+  0% { left: 0; opacity: 0; }
+  50% { left: -25px;opacity: 1; }
+  100% { left: -25px; opacity: 1;}
+}
+
+.carousel-indicators .active {
+    background-color: #000000;
+}
+.carousel-control-prev {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 5%, rgba(0, 0, 0, 0.900) 95%);
+}
+.carousel-control-next {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 5%, rgba(0, 0, 0, 0.900) 95%);
+}
+
+.main-btn {
+    -webkit-box-flex: 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 3px 30px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    transition: 0.5s;
+    position: relative;
+    font-size: 15px;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+.carousel-caption h3 {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 15px #000;
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 15px #000;
+}
