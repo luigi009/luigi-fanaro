@@ -19,8 +19,8 @@ const quote = document.querySelector('#quote');
 
 quoteBtn.addEventListener('click', displayQuote);
 
-function displayQuote () {
-    let number = Math.floor(Math.random()*quotes.length);
+function displayQuote (number) {
+    var number = Math.floor(Math.random()*quotes.length);
     
     quoteAuthor.innerHTML = quotes[number].name;
     quote.innerHTML = quotes[number].quote;
