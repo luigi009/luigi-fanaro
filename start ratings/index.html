@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-group">
+            <select name="" id="product-select" class="form-control custom-select">
+                <option value="" disabled selected>Select Product</option>
+                <option value="microsoft"> Xbox One</option>
+                <option value="sony">PlayStation 5</option>
+                <option value="nintendo">Nintendo Switch</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Consoles</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="microsoft">
+                    <td>Microsoft Xbox One</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="sony">
+                    <td>Sony PlayStation 5</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="nintendo">
+                    <td>Nintendo Switch</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
