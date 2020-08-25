@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="home" class="header">
+
+        <img src="./img/logo.jpg" alt="">
+
+        <img id="myBtn" src="./img/shop-icon.jpg" style="float: right; margin-top: 50px; margin-left: 5px;">
+
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div id="w">
+              <header style="border-bottom: 3px solid #7f7f7f; float: left;" id="title">
+                <h2 style="float: left;">SEU CARRINHO</h2>
+              </header>
+
+              <div id="page">
+                <table id="cart">
+                  <thead>
+                    <tr>
+                      <th class="product">PRODUTOS</th>
+                      <th></th>
+                      <th></th>
+                      <th class="subtotal">SUBTOTAL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- shopping cart contents -->
+                    <tr class="productitm">
+                      <td><img src="./img/product-1.jpg" class="thumb"></td>
+                      <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+                      <td>Lorem ipsum dolor summit(Azul, P) R$ 99,99</td>
+                      <td>R$99,99</td>
+                      <td style="width: 62%;"><span class="remove"><img src="./img/trash-icon.png" alt="X"></span></td>
+                    </tr>
+                    <tr class="productitm">
+                      <td><img src="./img/product-2.jpg" class="thumb"></td>
+                      <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+                      <td>Lorem ipsum dolor summit(Azul, P) R$ 99,99</td>
+                      <td>R$199,99</td>
+                      <td><span class="remove"><img src="./img/trash-icon.png" alt="X"></span></td>
+                    </tr>
+                    
+                    <!-- tax + subtotal -->
+                    <tr class="subtotalprice">
+                      <td class="light">SUBTOTAL:</td>
+                      <td colspan="2">&nbsp;</td>
+                      <td colspan="2"><span class="thick">R$999,99</span></td>
+                    </tr>
+
+                    <tr class="cep-space">
+                      <td class="cep">CEP:</td>
+                      <td></td>
+                      <td style="padding-bottom: 20px; padding-top: 20px;"><input style="width: 90px;" type="text" value="00000-00"></td>
+                      <td><input class="btn-calculate-shipping" type="submit" value="CALCULE O FRETE"></td>
+                    </tr>
+
+                    <tr class="extracosts">
+                      <td class="light">FRETE</td>
+                      <td colspan="2" class="light"></td>
+                      <td>$35.00</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr class="totalprice">
+                      <td class="light">TOTAL:</td>
+                      <td colspan="2">&nbsp;</td>
+                      <td colspan="2"><span class="thick">R$999,99</span></td>
+                    </tr>
+                    
+                    <!-- checkout btn -->
+                    <tr>
+                      <td style="width: 55%;"><a href="#" class="continue-shopping"> < Continuar comprando</a></td>
+                      <td colspan="5" class="checkout"><button id="submitbtn">FINALIZAR COMPRA</button></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        
+        <!--Login and Shop Section-->
+        <div class="dropdown" style="float: right;">
+           <img src="./img/login-icon.jpg" style="margin-top: 50px;" alt="">
+            <div class="dropdown-content">
+                <a href="#" class="desc">Cadastra-se</a>
+                <a href="#" class="desc"> Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Navbar Section-->
+      <div class="topnav">
+        <div class="search-container">
+            <form action="#">
+              <input type="text" placeholder="Pesquisar..." name="search">
+              <button style="background: white;" type="submit"><i style="color: gray;" class="fa fa-search"></i></button>
+            </form>
+        </div>  
+        <a href="#">Categoria</a>
+        <a href="#">Categoria</a>
+        <a href="#">Categoria</a>
+            <div class="dropdown">
+                <button class="dropbtn">Categoria lorem ipsum 
+                   <i class=""></i>
+                </button>
+                <div class="dropdown-content">
+                   <a href="#">Categoria lorem ipsum </a>
+                   <a href="#">Categoria lorem ipsum </a>
+                   <a href="#">Categoria lorem ipsum </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Categoria lorem ipsum 
+                   <i class=""></i>
+                </button>
+                <div class="dropdown-content">
+                   <a href="#">Categoria lorem ipsum </a>
+                   <a href="#">Categoria lorem ipsum </a>
+                   <a href="#">Categoria lorem ipsum </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Categoria lorem ipsum 
+                   <i class=""></i>
+                </button>
+                <div class="dropdown-content">
+                   <a href="#">Categoria lorem ipsum </a>
+                   <a href="#">Categoria lorem ipsum </a>
+                   <a href="#">Categoria lorem ipsum </a>
+                </div>
+            </div>   
+      </div>
+
+      <!--Banner Section-->
+      <div class="banner"></div>
+
+      <!--Mini Banner Section-->
+      <div class="line">
+          <div class="container">
+            <div class="card">
+               <img src="./img/racoes.jpg" alt="">
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+               <img src="./img/brinquedos.jpg" alt="">
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+               <img src="./img/acessorios.jpg" alt="">
+            </div>
+          </div>
+      </div>
+
+      <!--Novidades Section-->
+      <h1 style="font-size: 24px; text-align: center; color: #7f7f7f;">NOVIVADES</h1>
+
+      <!--Slide News-->
+      <div class="thumbnail-slider">
+        <div class="thumbnail-container">
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-1.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-2.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-3.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-4.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-1.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-2.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-3.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-4.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-1.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-2.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-3.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+          <div class="item card-product">
+            <div class="product-image-container">
+              <img class="image" src="./img/product-4.jpg" alt="" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">COMPRA RÁPIDA</div>
+              </div>
+            </div>
+            <p>Lorem ipsum summit</p>
+            <p class="price">R$99.99</p>
+          </div>
+        </div>
+        
+        <!-- controls slides -->
+        <div class="controls">
+        </div>
+      
+      </div>
+
+
+      <!--Dog and Cat Banner-->
+      <div class="row">
+        <div class="dog-cat-banner" style="background: url('./img/dog-banner.jpg'); background-repeat: no-repeat; background-size: fill;">
+        </div>
+        <div class="dog-cat-banner" style="background: url('./img/cat-banner.jpg'); background-repeat: no-repeat; background-size: fill;">
+        </div>
+      </div>
+
+      <!--Destaque Section-->
+      <h1 style="font-size: 24px; text-align: center; color: #7f7f7f;">DESTAQUES</h1>
+      <div class="products-line">
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-1.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-2.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-3.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-4.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+      </div>
+
+      <div class="products-line">
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-1.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-2.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-3.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+        <div class="card-product">
+          <div class="product-image-container">
+            <img class="image" src="./img/product-4.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">COMPRA RÁPIDA</div>
+            </div>
+          </div>
+          <p>Lorem ipsum summit</p>
+          <p class="price">R$99.99</p>
+        </div>
+      </div>
+      <button class="btn-all-products">VER TODOS OS PRODUTOS</button>
+
+      <section class="newsletter">
+        <div class="textpromotion">
+          <div>
+            <img style="float: left; margin-top: 10px;" src="./img/newsletter-img.png" alt="">
+            <p>ENTREGA GRATUITA A PARTIR DE R$99</p>
+          </div>
+          <div>
+            <img style="float: left; margin-top: 10px;" src="./img/newsletter-img.png" alt="">
+            <p>PARCELAMENTO SEM JUROS</p>
+          </div>
+          <div>
+            <img style="float: left; margin-top: 10px;" src="./img/newsletter-img.png" alt="">
+            <p>CADASTRA-SE E GANHE DESCONTO</p>
+          </div>
+        </div>
+        <div>
+          <h3>ASSINE NOSSA NEWSLETTER</h3>
+          <p>Cadastra-se para receber nossas novidades e descontos exclusivos</p>
+        </div>
+        <form method="post">
+          <input type="text" placeholder="Nome">
+          <input type="email" placeholder="E-mail">
+          <button>Enviar</button>
+        </form>
+      </section>
+
+      <!--WhatsApp and Arrow Icon-->
+      <a href="#" class="whatsapp-float" target="_blank">
+        <i class="fa fa-whatsapp whatsapp-my-float"></i>
+      </a>
+
+      <a href="#home" class="arrow-float">
+        <img src="./img/arrow-icon.png" class="arrow-my-float" alt="">
+      </a>
+      
+      <!--Footer-->
+      <div class="footer">
+          <div class="inner_footer">
+              <div class="logo_container">
+                  <img src="./img/footer-logo.jpg" alt="">
+                  <li>
+                      <a href="#">
+                        <img href="#" target='_blank' style="height: 30px; width: 30px; margin-right: 15px; margin-left: 15px;" class="facebook" src="./img/Facebook.png" alt="">
+                        <img href="#" target='_blank' style="height: 30px; width: 30px; margin-right: 15px;" class="twitter" src="./img/Twitter.png" alt="">
+                        <img href="#" target='_blank' style="height: 30px; width: 30px;" class="instagram" src="./img/Instagram.png" alt="">
+                      </a>
+                  </li>
+                  <p style="padding: 10px;">&copy; 2019 &nbsp;&bull; &nbsp;CNPJ 00.000.000/0000-00<br>Rua Tal de Tal, 123 - Cidade, Estado</p>
+              </div>
+
+              <div class="footer_third">
+                  <h1>PET STORE</h1>
+                  <a href="#">Quem Somos</a>
+                  <a href="#">Como Comprar</a>
+                  <a href="#">Trocar e Devoluções</a>
+              </div>
+
+              <div class="footer_third">
+                <h1>CONTATO</h1>
+                <a href="#">(99)9999-9999</a>
+                <a href="#">(99)9999-9999</a>
+                <a href="#">petstore@petstore.com.br</a>
+            </div>
+
+            <div class="footer_third">
+                <h1>PAGAMENTO</h1>
+                <div class="grid-container">
+                  <img src="./img/payment-icons.png" alt="">
+                </div>
+            </div>
+          </div>
+      </div>
+
+
+       <div class="line_footer">
+          <img src="./img/devs-logo.png" alt="">
+       </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
