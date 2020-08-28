@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  font-weight: 300;
+}
+.btn {
+  font-weight: 300;
+}
+.card {
+  text-align: center;
+  border: none;
+}
+.card-title {
+  font-size: 12px;
+}
+.btn-rounded {
+  background: #efefef;
+  font-family: monospace;
+  border-radius: 50%;
+  color: #000;
+  font-weight: 400;
+  margin: 10px;
+}
+.btn-rounded:first-child {
+  margin-left: 14px;
+}
+.cart-title {
+  font-weight: 300;
+  padding: 32px 0;
+}
+.cart-thead tr th {
+  border-top: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  min-width: 160px;
+  width: 280px;
+}
+.cart-thead tr th:nth-child(2) {
+  min-width: 124px;
+  width: 124px;
+}
+.cart-thead tr th:last-child {
+  min-width: 64px;
+  width: 64px;
+}
+.cart-table-row {
+  height: 84px;
+}
+.cart-table-row td {
+  vertical-align: middle;
+}
+.transparent-bg {
+  background-color: transparent;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+}
+
+.total-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  border-top: 1px solid #000;
+}
+
+.form-control {
+  border: 1px solid #000;
+}
+
+.checkout-btn {
+  margin: 0;
+  position: relative;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
