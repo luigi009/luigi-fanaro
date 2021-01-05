@@ -39,6 +39,10 @@
         font-size: 22px;
     }
 
+    .wheather-icon {
+        padding: 20px;
+    }
+
     .description, .temp-now {
         font-size: 22px;
     }
