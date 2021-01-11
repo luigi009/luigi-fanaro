@@ -35,7 +35,7 @@ class SingleItem extends React.Component {
 
   render() {
     return (
-      <div className="col-md-2 col-sm-6 card grid-container">
+      <div className="col-sm-5 card">
         <div className="card-body">
           <img src="https://images.apple.com/v/macbook-pro/n/images/overview/compare13_small.jpg"></img>
           <h5 className="card-title">{this.state.title}</h5>
@@ -167,8 +167,8 @@ class ShopCart extends React.Component {
     var itemsCount = allItems.length;
     //Descrição dos produtos fora e dentro do carrinho
     return (
-      <div className="container-lg">
-        <div className="row">
+      <div className="container">
+        <div className="row justify-content-center">
           <SingleItem
             ref={this.SingleItem}
             func={this.addItem}
@@ -215,7 +215,7 @@ class ShopCart extends React.Component {
         <br />
         <br />
         <div class="container">
-          <div class="row ">
+          <div class="row">
             <h1 class="text-center m-auto cart-title">Carrinho</h1>
           </div>
         </div>
