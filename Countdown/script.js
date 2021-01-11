@@ -1,7 +1,7 @@
 const countdown = document.querySelector(".countdown");
 
 const interval = setInterval(() => {
-    const deadLine = new Date(2020,10,15,12,00,00);
+    const deadLine = new Date(2021,10,15,12,00,00);
 
     const current = new Date();
 
