@@ -80,7 +80,4 @@ const mapStateToProps = state => ({
   movie: state.movies.movie
 });
 
-export default connect(
-  mapStateToProps,
-  { fetchMovie, setLoading }
-)(Movie);
+export default connect(mapStateToProps, { fetchMovie, setLoading })(Movie);
