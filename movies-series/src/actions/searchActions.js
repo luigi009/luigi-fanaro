@@ -1,4 +1,4 @@
-import { SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING } from './types';
+import { SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING, LOADING_MOVIE_DETAIL } from './types';
 import axios from 'axios';
 
 import { APIKey } from '../APIKey';
@@ -33,5 +33,11 @@ export const fetchMovie = id => dispatch => {
 export const setLoading = () => {
   return {
     type: LOADING
+  };
+};
+
+export const setLoadingMovieDetail = () => {
+  return {
+    type: LOADING_MOVIE_DETAIL
   };
 };

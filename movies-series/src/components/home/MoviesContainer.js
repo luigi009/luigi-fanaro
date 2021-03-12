@@ -14,7 +14,11 @@ export class MoviesContainer extends Component {
             <MovieCard key={index} movie={movie} />
           ))
         : null;
-    return <div className="row">{content}</div>;
+    return ( 
+      <>
+        <div className="row">{content}</div>
+      </>
+    )
   }
 }
 

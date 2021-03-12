@@ -2,13 +2,15 @@ import {
   SEARCH_MOVIE,
   FETCH_MOVIES,
   FETCH_MOVIE,
-  LOADING
+  LOADING,
+  LOADING_MOVIE_DETAIL
 } from '../actions/types';
 
 const initialState = {
   text: '',
   movies: [],
   loading: false,
+  loaddingMovieDetail: false,
   movie: []
 };
 
@@ -18,25 +20,33 @@ export default function(state = initialState, action) {
       return {
         ...state,
         text: action.payload,
-        loading: false
+        loading: false,
+        loaddingMovieDetail: false
       };
     case FETCH_MOVIES:
       return {
         ...state,
         movies: action.payload,
-        loading: false
+        loading: false,
+        loaddingMovieDetail: false
       };
     case FETCH_MOVIE:
       return {
         ...state,
         movie: action.payload,
-        loading: false
+        loading: false,
+        loaddingMovieDetail: false
       };
     case LOADING:
       return {
         ...state,
         loading: true
       };
+      case LOADING_MOVIE_DETAIL:
+        return {
+          ...state,
+          loaddingMovieDetail: true
+        }
     default:
       return state;
   }

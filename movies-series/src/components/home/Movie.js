@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { fetchMovie, setLoading } from '../../actions/searchActions';
+import { fetchMovie, setLoadingMovieDetail } from '../../actions/searchActions';
 
-import Spinner from '../layout/Spinner';
+import SpinnerMovieDetail from '../layout/SpinnerMovieDetail';
 
 export class Movie extends Component {
   componentDidMount() {
     this.props.fetchMovie(this.props.match.params.id);
-    this.props.setLoading();
+    this.props.setLoadingMovieDetail();
   }
   render() {
-    const { loading, movie } = this.props;
+    const { loaddingMovieDetail, movie } = this.props;
 
     let movieInfo = (
       <div className="container">
@@ -70,14 +70,19 @@ export class Movie extends Component {
       </div>
     );
 
-    let content = loading ? <Spinner /> : movieInfo;
-    return <div>{content}</div>;
+    let content = loaddingMovieDetail ? <SpinnerMovieDetail /> : movieInfo;
+
+    return (
+      <>
+        <div>{content}</div>
+      </>
+    )
   }
 }
 
 const mapStateToProps = state => ({
-  loading: state.movies.loading,
+  loaddingMovieDetail: state.movies.loaddingMovieDetail,
   movie: state.movies.movie
 });
 
-export default connect(mapStateToProps, { fetchMovie, setLoading })(Movie);
+export default connect(mapStateToProps, { fetchMovie, setLoadingMovieDetail })(Movie);
