@@ -11,7 +11,18 @@
 #imdb-logo {
   color: #f5de50;
 }
-@media (min-width: 960px) {
+
+.loading-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 480px) {
+
+  .loading-container {
+    flex-direction: column;
+  }
+
   #movies .col-md-3 .well {
     height: 390px;
   }
