@@ -3,7 +3,7 @@ import {
   FETCH_MOVIES,
   FETCH_MOVIE,
   LOADING,
-  LOADING_MOVIE_DETAIL
+  LOADING_MOVIE_DETAIL,
 } from '../actions/types';
 
 const initialState = {
