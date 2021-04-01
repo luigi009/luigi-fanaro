@@ -13,7 +13,7 @@ export class MovieCard extends Component {
           </h5>
           <Link className="btn btn-primary" to={'/movie/' + movie.imdbID}>
             Movie Details
-            <i className="fas fa-chevron-right" />
+            <i className="fas fa-chevron-right pl-3" />
           </Link>
         </div>
       </div>

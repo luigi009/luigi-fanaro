@@ -8,7 +8,7 @@ function Navbar() {
         <div className="container">
           <div className="navbar-header">
             <Link className="navbar-brand text-white text-lg brand-text" to="/">
-              MovieSeriesInfo
+              <i className="fab fa-imdb fa-3x"></i>
             </Link>
           </div>
         </div>

@@ -24,17 +24,17 @@ export class SearchForm extends Component {
       <div className="jumbotron jumbotron-fluid mt-5 text-center">
         <div className="container">
           <h1 className="display-4 mb-3">
-            <i className="fa fa-search" /> Search for a movie ,TV series ..
+            <i className="fa fa-search" /> Search for a movie ,TV series ...
           </h1>
-          <form id="searchForm" onSubmit={this.onSubmit}>
+          <form className="d-flex flex-row justify-content-center" id="searchForm" onSubmit={this.onSubmit}>
             <input
               type="text"
-              className="form-control"
+              className="form-control ml-3 mr-3"
               name="searchText"
               placeholder="Search Movies, TV Series ..."
               onChange={this.onChange}
             />
-            <button type="submit" className="btn btn-primary btn-bg mt-3">
+            <button type="submit" className="btn btn-primary btn-bg">
               Search
             </button>
           </form>
