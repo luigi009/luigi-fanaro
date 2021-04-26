@@ -50,7 +50,7 @@ export default function home() {
 
               {featuredData && <FeaturedMovie item={featuredData} />}
 
-              <section className="lists mt-[-150px]">
+              <section className="lists mt-[-250px]">
                   {movieList.map((item, key) => (
                       <MovieRow key={key} title={item.title} items={item.items} />
                   ))}

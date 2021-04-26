@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { signIn, signOut, useSession } from 'next-auth/client'
-import Link from 'next/link'
 
 export default function Home() {
 
