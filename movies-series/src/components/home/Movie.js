@@ -15,13 +15,13 @@ export class Movie extends Component {
     const { loaddingMovieDetail, movie } = this.props;
 
     let movieInfo = (
-      <div className="container">
-        <div className="row">
+      <div className="container mt-4">
+        <div className="row p-4">
           <div className="col-md-4 card card-body">
             <img src={movie.Poster} className="thumbnail" alt="Poster" />
           </div>
           <div className="col-md-8">
-            <h2 className="mb-4">{movie.Title}</h2>
+            <h2 className="mb-4 card-title" style={{color: '#fff'}}>{movie.Title}</h2>
             <ul className="list-group">
               <li className="list-group-item">
                 <strong>Genre:</strong> {movie.Genre}
@@ -47,23 +47,23 @@ export class Movie extends Component {
             </ul>
           </div>
         </div>
-        <div className="row">
-          <div className="card card-body bg-dark my-5 text-light">
-            <div className="col-md-12">
-              <h3>About </h3>
+        <div className="row p-4">
+          <div className="card card-body my-5 text-light" style={{backgroundColor: '#003060'}}>
+            <div className="col-md-12 p-4">
+              <h3 style={{fontWeight: 'bold'}}>About </h3>
               {movie.Plot}
               <hr />
+              <Link to="/" className="btn btn-default text-light">
+                Back
+              </Link>
               <a
                 href={'https://www.imdb.com/title/' + movie.imdbID}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary"
+                className="btn btn-primary ml-2"
               >
                 View on IMDB
               </a>
-              <Link to="/" className="btn btn-default text-light">
-                Go Back To Search
-              </Link>
             </div>
           </div>
         </div>

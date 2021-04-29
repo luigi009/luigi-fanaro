@@ -21,22 +21,22 @@ export class SearchForm extends Component {
 
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid mt-5 text-center">
+      <div className="mt-5 mb-5 text-center">
         <div className="container">
-          <h1 className="display-4 mb-3">
-            <i className="fa fa-search" /> Search for a movie ,TV series ...
-          </h1>
           <form className="d-flex flex-row justify-content-center" id="searchForm" onSubmit={this.onSubmit}>
-            <input
-              type="text"
-              className="form-control ml-3 mr-3"
-              name="searchText"
-              placeholder="Search Movies, TV Series ..."
-              onChange={this.onChange}
-            />
-            <button type="submit" className="btn btn-primary btn-bg">
+            <div className="d-flex flex-row justify-content-center border border-1 rounded-pill" style={{boxShadow: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)'}}>
+              <i className="fa fa-search" />
+                <input
+                  type="text"
+                  className="form-control ml-3 mr-3 border-0"
+                  name="searchText"
+                  placeholder="Search Movies, TV Series ..."
+                  onChange={this.onChange}
+                />
+            </div>
+            {/* <button type="submit" className="btn btn-primary btn-bg">
               Search
-            </button>
+            </button> */}
           </form>
         </div>
       </div>

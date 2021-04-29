@@ -16,11 +16,11 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div>
+          <>
             <Navbar />
             <Route exact path="/" component={Landing} />
             <Route exact path="/movie/:id" component={Movie} />
-          </div>
+          </>
         </Router>
       </Provider>
     );

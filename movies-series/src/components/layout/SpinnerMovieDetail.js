@@ -4,8 +4,8 @@ function SpinnerMovieDetail() {
 
   return (
     <>
-      <div className="container">
-        <div className="row">
+      <div className="container mt-4">
+        <div className="row p-4">
             <div className="ssc col-md-5 mb-5 pl-0">
                 <div className="ssc-wrapper ssc-card">
                     <div className="d-flex justify-content-center">
