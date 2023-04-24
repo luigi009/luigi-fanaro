@@ -1,4 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Shopping Cart (React)
+
+## Description
+
+This project was created to practice the use of React. The main goal of this project is to create a shopping cart.
+
+## How to use
+
+To use this project, you need to download the project and run the following commands:
+
+```bash
+
+npm install
+
+npm run start
+
+```
+
+After that, you can click on the buttons 'Adicionar ao carrinho' to add the products to the shopping cart. You can click on the button 'X' to remove the products from the shopping cart.
 
 ## Available Scripts
 
