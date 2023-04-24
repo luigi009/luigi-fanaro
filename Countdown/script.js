@@ -1,39 +1,45 @@
 const countdown = document.querySelector(".countdown");
 
 const interval = setInterval(() => {
-    const deadLine = new Date(2021,10,15,12,00,00);
+  const deadLine = new Date(2025, 10, 15, 12, 00, 00);
 
-    const current = new Date();
+  const current = new Date();
 
-    const diff = deadLine - current;
+  const diff = deadLine - current;
 
-    const days = Math.floor(diff/(1000*60*60*24));
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-    const hours = Math.floor((diff/(1000*60*60))%24)
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
 
-    const minutes = Math.floor((diff/(1000*60))%60);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
 
-    const seconds = Math.floor((diff/1000)%60);
+  const seconds = Math.floor((diff / 1000) % 60);
 
-    countdown.innerHTML = `
-      <div data-content="Days">${days.length===1 ? `0${days}`:days}</div>
-      <div data-content="Hours">${hours.length===1 ? `0${hours}`:hours}</div>
-      <div data-content="Minutes">${minutes.length===1 ? `0${minutes}`:minutes}</div>
-      <div data-content="Seconds">${seconds.length===1 ? `0${seconds}`:seconds}</div>
+  countdown.innerHTML = `
+      <div data-content="Days">${days.length === 1 ? `0${days}` : days}</div>
+      <div data-content="Hours">${
+        hours.length === 1 ? `0${hours}` : hours
+      }</div>
+      <div data-content="Minutes">${
+        minutes.length === 1 ? `0${minutes}` : minutes
+      }</div>
+      <div data-content="Seconds">${
+        seconds.length === 1 ? `0${seconds}` : seconds
+      }</div>
     `;
 
-    if(diff < 0) {
-        clearInterval(interval);
-        countdown.innerHTML = '<h1>Here We Go!!!</h1>'
-    }
+  if (diff < 0) {
+    clearInterval(interval);
+    countdown.innerHTML = "<h1>Here We Go!!!</h1>";
+  }
 
-    document.querySelector('.reset').addEventListener('click',() => {
-        clearInterval(interval);
+  document.querySelector(".reset").addEventListener("click", () => {
+    clearInterval(interval);
 
-        const divs = document.querySelectorAll('countdown div');
+    const divs = document.querySelectorAll("countdown div");
 
-        divs.forEach(div => {
-            div.innerHTML = "00";
-        })
-    })
-},1000);
+    divs.forEach((div) => {
+      div.innerHTML = "00";
+    });
+  });
+}, 1000);
