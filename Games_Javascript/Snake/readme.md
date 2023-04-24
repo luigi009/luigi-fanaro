@@ -6,7 +6,7 @@ This is a simple snake game made with Javascript. It is a single player game. Yo
 
 ## How to play
 
-To play the game, you need to open the `snake.html` file in your browser. You can use any browser you want or you can use Live Share to open it. The game is going to start automatically. You can use the arrow keys to move the snake.
+To play the game, you need to open the `snake.html` file in your browser. You can use any browser you want or you can use Live Server in Visual Studio Code. The game is going to start automatically. You can use the arrow keys to move the snake.
 
 ## How to restart the game
 
