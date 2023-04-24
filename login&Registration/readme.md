@@ -6,7 +6,7 @@ This is a simple login and registration page made with HTML, CSS and Javascript.
 
 ## How to open the page
 
-To open the page, you need to open the `index.html` file in your browser. You can use any browser you want or you can use Live Share to open it.
+To open the page, you need to open the `index.html` file in your browser. You can use any browser you want or you can use Live Server in Visual Studio Code.
 
 ## How to change the background image
 
